@@ -36,15 +36,15 @@
 
         <input type="text" name="descricao" id="descricao" required>
         <br>
-
+        <br>
         <label for="valor">Valor:</label>
         <input type="number" step="0.01" name="valor" id="valor" required>
         <br>
-
+        <br>
         <label for="data">Data:</label>
         <input type="date" name="data" id="data" required>
         <br>
-
+        <br>
         <input type="submit" value="Cadastrar">
     </form>
 
