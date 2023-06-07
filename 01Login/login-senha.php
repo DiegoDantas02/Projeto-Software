@@ -29,6 +29,7 @@
             padding: 10px 20px;
             cursor: pointer;
             display: flex;
+            margin-top: -43px;
         }
 
         .container {
@@ -37,8 +38,6 @@
             align-items: flex-end;
             justify-content: center;
             height: 100vh;
-            
-    
       
         }
 
@@ -64,7 +63,7 @@
             padding: 10px;
             border-radius: 5px;
             border: none;
-        }
+        } 
 
         .error-message {
             color: red;
@@ -122,7 +121,7 @@
     }
     ?>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
 
 </body>
 
