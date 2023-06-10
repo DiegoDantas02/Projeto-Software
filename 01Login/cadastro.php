@@ -17,7 +17,7 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
-            background-image: url(../img/TELADELOGIN.png);
+            background-image: url(../img/contabilidade.png);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -29,16 +29,24 @@
         .container {
             width: 350px;
             margin: 0 auto;
-            padding: 150px;
+            padding: 130px;
             background-color: darkgray;
             border-radius: 50px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
-            margin-top: 150px;
+            margin-top: -25px;
             margin-left: center;
 
         }
+        .c2{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
 
+        }
             .container input[type="text"],
             .container input[type="password"] {
             width: 100%;
@@ -62,6 +70,15 @@
         .container button:hover {
             background-color: #45a049;
         }
+        .escritas{
+            margin-left: -200px;
+        }
+        .escrita{
+            margin-left: -250px;
+        }
+        .escrit{
+            margin-left: -300px;
+        }
     </style>
     </head>
 
@@ -75,15 +92,21 @@
             <br>
 
             <form method="POST" action="login.php">
-                <input type="text" name="username" placeholder="Nome de usuário" required>
+                <div class="escrita">Nome Login:</div>
+                <input type="text" name="username" placeholder="Fortuna Company" required>
                 <br>
+                <div class="escrit">Senha:</div>
                 <input type="password" name="password" placeholder="Senha" required>
                 <br>
-                <input type="name" name="nome" placeholder="Fortuna Company" required>
+                <div class="escritas">Nome da Empresa:</div>
+                <input type="name" name="nome" placeholder="Fortuna Company" class="c2" required>
                 <br>
-                <input type="email" name="email" placeholder="email@fortuna.com.br" required>
+                <div class="escrit">E-mail:</div>
+                <input type="email" name="email" placeholder="email@fortuna.com.br" class="c2" required>
                 <br>
-                <input type="celular" name="celular" placeholder="celular" required>
+                <div class="escritas">Número de contato:</div>
+                <input type="number" name="celular" placeholder="celular" class="c2" required>
+                <br>
                 <br>
                 <button type="submit">REGISTRAR</button>
             </form>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
-<div class="">
+<div>
     <img src="../img/logo.png" alt="imagem do logo da empresa">
 
 </div>
@@ -17,7 +17,7 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
-            background-image: url(../img/TELADELOGIN.png);
+            background-image: url(../img/mesa.png);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -76,7 +76,9 @@
 
             <form method="POST" action="login.php">
                 <input type="text" name="username" placeholder="Nome de usuário" required>
+                <br>
                 <input type="password" name="password" placeholder="Senha" required>
+                <br>
                 <button type="submit">Entrar</button>
             </form>
 
