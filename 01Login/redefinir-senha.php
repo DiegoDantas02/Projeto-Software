@@ -17,9 +17,9 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
-            background-image: url(../img/contabilidade.png);
+            background-image: url(../img/doisboss.png);
             background-size: cover;
-            background-position: 0 0 0 0;
+            background-position: center;
             background-repeat: no-repeat;
             height: 100vh;
             overflow: hidden;
@@ -29,8 +29,8 @@
         .container {
             width: 350px;
             margin: 0 auto;
-            padding: 100px;
-            background-color: black;
+            padding: 90px;
+            background-color: darkgray;
             border-radius: 50px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
@@ -38,15 +38,7 @@
             margin-left: center;
 
         }
-        .c2{
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-            box-sizing: border-box;
 
-        }
             .container input[type="text"],
             .container input[type="password"] {
             width: 100%;
@@ -70,20 +62,17 @@
         .container button:hover {
             background-color: #45a049;
         }
-        .escritas{
-            margin-left: -200px;
-        }
-        .escrita{
+        .descrição{
             margin-left: -250px;
         }
-        .escrit{
-            margin-left: -300px;
+        .descrição1{
+            margin-left: -210px;
         }
         .logo {
             position: absolute;
             top: 20px;
             left: 20px;
-            width: 200px;
+            width: 100px;
             
         }
     </style>
@@ -92,33 +81,28 @@
     <body>
         <div class="container">
 
-            <h1> <strong>CADASTRO</strong> </h1>
-
+            <h1> <STROng>REDEFINIR SENHA</STROng> </h1>
+            
             <br>
             <br>
-            <br>
+            
 
             <form method="POST" action="login.php">
-                <div class="escrita">Nome Login:</div>
+                <p class="descrição1">  Nome de Usuário:</p>
                 <input type="text" name="username" placeholder="Fortuna Company" required>
                 <br>
-                <div class="escrit">Senha:</div>
+                <p class="descrição">Antiga Senha:</p>
                 <input type="password" name="password" placeholder="Senha" required>
                 <br>
-                <div class="escritas">Nome da Empresa:</div>
-                <input type="name" name="nome" placeholder="Fortuna Company" class="c2" required>
-                <br>
-                <div class="escrit">E-mail:</div>
-                <input type="email" name="email" placeholder="email@fortuna.com.br" class="c2" required>
-                <br>
-                <div class="escritas">Número de contato:</div>
-                <input type="number" name="celular" placeholder="celular" class="c2" required>
+                <p class="descrição">Nova Senha:</p>
+                <input type="text" name="password" placeholder="Senha" required>
                 <br>
                 <br>
-                <button type="submit">REGISTRAR</button>
+                <button type="submit">Entrar</button>
             </form>
 
-            <p>Já tem conta? <a href="login.php">Faça Login</a></p>
+            <p>Já tem conta? <a href="login.php">Efetuar Login</a></p>
+            
         </div>
         
 
