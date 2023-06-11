@@ -12,33 +12,33 @@
 </div>
 
 <body>
-   
+
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             background-image: url(../img/contabilidade.png);
             background-size: cover;
-            background-position: 0 0 0 0;
             background-repeat: no-repeat;
-            height: 100vh;
             overflow: hidden;
+            height: 1200px;
+
         }
 
 
         .container {
             width: 350px;
             margin: 0 auto;
-            padding: 100px;
+            padding: 60px;
             background-color: black;
             border-radius: 50px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
-            margin-top: 100px;
+            margin-top: 120px;
             margin-left: center;
 
         }
-        .c2{
+
+        .c2 {
             width: 100%;
             padding: 10px;
             margin-bottom: 10px;
@@ -47,8 +47,9 @@
             box-sizing: border-box;
 
         }
-            .container input[type="text"],
-            .container input[type="password"] {
+
+        .container input[type="text"],
+        .container input[type="password"] {
             width: 100%;
             padding: 10px;
             margin-bottom: 10px;
@@ -70,21 +71,25 @@
         .container button:hover {
             background-color: #45a049;
         }
-        .escritas{
+
+        .escritas {
             margin-left: -200px;
         }
-        .escrita{
+
+        .escrita {
             margin-left: -250px;
         }
-        .escrit{
+
+        .escrit {
             margin-left: -300px;
         }
+
         .logo {
-            position: absolute;
+            position: flex;
             top: 20px;
             left: 20px;
             width: 200px;
-            
+
         }
     </style>
     </head>
@@ -120,7 +125,7 @@
 
             <p>Já tem conta? <a href="login.php">Faça Login</a></p>
         </div>
-        
+
 
     </body>
 
