@@ -20,7 +20,7 @@ include "cabecalho.php";
                 <br>
                 <strong>SALARIO</strong>
                 <BR></BR>
-                <P class="text-success">R$1.200,00</P>
+                <P class="text-success"><?php $salario = 1200; echo 'R$' . number_format($salario, 2, ',', '.'); ?></P>
             </a>
         </div>
 
@@ -30,7 +30,8 @@ include "cabecalho.php";
                 <br>
                 <strong>ECONOMIZADO</strong>
                 <br><br>
-                <P class="text-warning">R$200,00</P>
+                <?php $economia = 200; ?>
+                <P class="text-warning"><?php echo 'R$' . number_format($economia, 2, ',', '.'); ?></P>
             </a>
         </div>
         <div class="col m-5 border rounded pt-3 pb-3">
@@ -39,7 +40,8 @@ include "cabecalho.php";
                 <br>
                 <strong>GASTOS COM O CARTÃO</strong>
                 <br><br>
-                <P class="text-danger">R$800,00</P>
+                <?php $gastosCartao = 800; ?>
+                <P class="text-danger"><?php echo 'R$' . number_format($gastosCartao, 2, ',', '.'); ?></P>
             </a>
         </div>
 
@@ -47,8 +49,6 @@ include "cabecalho.php";
 
 </div>
 <!-- ---------------------- end menu -->
-
-<!-- --------- -------- -->
 
 
 <div class="row text-center">
@@ -58,8 +58,8 @@ include "cabecalho.php";
             <br>
             <strong>GASTOS EM DINHEIRO</strong>
             <br> <br>
-            <P class="text-danger">R$100,00</P>
-
+            <?php $gastosDinheiro = 100; ?>
+            <P class="text-danger"><?php echo 'R$' . number_format($gastosDinheiro, 2, ',', '.'); ?></P>
         </a>
     </div>
 
@@ -69,7 +69,8 @@ include "cabecalho.php";
             <br>
             <strong>PAINEL DE GASTOS </strong>
             <br> <br>
-            <P class="text-secondary">R$2.000,00</P>
+            <?php $totalGastos = $gastosCartao + $gastosDinheiro; ?>
+            <P class="text-secondary"><?php echo 'R$' . number_format($totalGastos, 2, ',', '.'); ?></P>
         </a>
     </div>
     <div class="col m-5 border rounded pt-3 pb-3">
@@ -81,6 +82,7 @@ include "cabecalho.php";
     </div>
 </div>
 </div>
+
 <?php
     include "rodape.php";
     ?>
