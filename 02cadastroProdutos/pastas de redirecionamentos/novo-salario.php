@@ -10,7 +10,7 @@ include "cabecalho.php";
         <label> Nome Da Empresa: <input name=""></label>
 
     <label>  Salarío atual: <input date="data"></label>
-    <button type="submit" style="background:linear-gradient(to right, #50a150, #85c285); color:#fff; ">SALVAR</button>
+    <button type="submit" style="background:linear-gradient(to right, #50a150, #85c285); color:#fff; "> SALVAR </button>
     </form>
 </main>
 <br> <br><br><br><br>
