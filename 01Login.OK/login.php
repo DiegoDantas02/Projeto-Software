@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<link rel="shortcut icon" href="../02cadastroProdutos/img/favico.png" type="image/x-icon">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -88,45 +88,50 @@
         }
         .logo{
             width: 200px;
+            cursor: pointer;
         }
     </style>
 </head>
 
 <body>
+    <a href="../02cadastroProdutos/pastas de redirecionamentos/index.php">
     <img src="../img-login/logo.png" alt="imagem do logo da empresa" class="logo">
-
+    </a>
     <div class="container">
         <h1>LOGIN</h1>
 <br><br>
-        <?php
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            $username = $_POST["username"];
-            $password = $_POST["password"];
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $_POST["username"];
+    $password = $_POST["password"];
 
-            // Faça a validação e o processamento do formulário aqui
+    // Faça a validação e o processamento do formulário aqui
 
-            // Exemplo de verificação simples (apenas para fins ilustrativos)
-            if ($username === "usuario" && $password === "senha") {
-                echo "<p>Login realizado com sucesso!</p>";
-            } else {
-                echo "<p>Nome de usuário ou senha inválidos!</p>";
-            }
-        }
-        ?>
+    // Exemplo de verificação simples (apenas para fins ilustrativos)
+    if ($username === "usuario" && $password === "senha") {
+        echo "<p>Login realizado com sucesso!</p>";
+        // Redireciona para a página desejada após o login bem-sucedido
+        header("Location: login.php");
+        exit; // Termina a execução do script para evitar que o restante do código seja executado
+    } else {
+        echo "<p>Nome de usuário ou senha inválidos!</p>";
+    }
+}
+?>
 
-        <form method="POST" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
-        <P class="desc1">Nome de Usuário:</P>
-            <input type="text" name="username" placeholder="Nome de usuário" required>
-            <br>
-            <p class="desc">Senha:</p>
-            <input type="password" name="password" placeholder="Senha" required>
-            <br>
-            <br>
-            <button type="submit">Entrar</button>
-        </form>
+<form method="POST" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
+    <P class="desc1">Nome de Usuário:</P>
+    <input type="text" name="username" placeholder="Nome de usuário" required>
+    <br>
+    <p class="desc">Senha:</p>
+    <input type="password" name="password" placeholder="Senha" required>
+    <br>
+    <br>
+    <button type="submit">Entrar</button>
+</form>
 
-        <p>Ainda não tem uma conta? <a href="cadastro.php">Cadastrar-se</a></p>
-    </div>
+<p>Ainda não tem uma conta? <a href="cadastro.php">Cadastrar-se</a></p>
+
 
 </body>
 

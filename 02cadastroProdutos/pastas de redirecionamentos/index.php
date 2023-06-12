@@ -9,7 +9,7 @@ include "cabecalho.php";
 <div class="container-fluid">
     <div class="row">
         <div class="col">
-            <h2 class="display-6 text-center mt-4 mt-3"> Sistema de Finanças </h2>
+            <h2 class="display-6 text-center mt-4 mt-3"><strong> Sistema de Finanças </strong> </h2>
         </div>
     </div>
 
