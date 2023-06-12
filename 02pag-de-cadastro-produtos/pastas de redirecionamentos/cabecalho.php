@@ -39,7 +39,7 @@
                     </li>
                 </ul>
                 <div class="nav-item">
-                    <a class="nav-link text-white bg-danger rounded w-100 p-3 col-md-6 col-lg-8" href="../">
+                    <a class="nav-link text-white bg-danger rounded w-100 p-3 col-md-6 col-lg-8" href="/01Paginas-de-login/login.php">
                         <h5>Sair</h5>
                     </a>
                 </div>
