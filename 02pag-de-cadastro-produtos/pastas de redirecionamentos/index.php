@@ -77,7 +77,7 @@ include "cabecalho.php";
         <a href="configuracao.php" class="btn">
             <img src="../img/configuracoes.png">
             <br>
-            <strong>CONFIGURAÇÕES</strong>
+            <strong>CONFIGURAÇÕES DA CONTA </strong>
         </a>
     </div>
 </div>
