@@ -9,7 +9,7 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
-            background-image: url(../img/mesa.png);
+            background-image: url(../img-login/mesa.png);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -93,7 +93,7 @@
 </head>
 
 <body>
-    <img src="../img/logo.png" alt="imagem do logo da empresa" class="logo">
+    <img src="../img-login/logo.png" alt="imagem do logo da empresa" class="logo">
 
     <div class="container">
         <h1>LOGIN</h1>

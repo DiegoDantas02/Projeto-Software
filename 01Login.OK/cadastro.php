@@ -16,7 +16,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url(../img/contabilidade.png);
+            background-image: url(../img-login/contabilidade.png);
             background-size: cover;
             background-repeat: no-repeat;
             overflow: hidden;
