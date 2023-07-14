@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gerenciador Financeiro</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Gerenciador Financeiro</h1>
+  
+  <form action="process.php" method="post">
+    <label for="transacao">Transação:</label>
+    <input type="text" name="transacao" required>
+    
+    <label for="valor">Valor:</label>
+    <input type="number" name="valor" required>
+    
+    <input type="submit" value="Adicionar Transação">
+  </form>
+  
+  <h2>Transações:</h2>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Transação</th>
+        <th>Valor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <?php include 'transactions.php'; ?>
+    </tbody>
+  </table>
+</body>
+</html>
