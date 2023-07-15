@@ -30,7 +30,7 @@
             width: 350px;
             margin: 0 auto;
             padding: 90px;
-            background-color: darkgray;
+            background-color: white;
             border-radius: 50px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
